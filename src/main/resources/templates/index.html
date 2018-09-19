@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en-US" xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="utf-8"></meta>
+<meta http-equiv="Content-Type" content="text/html"></meta>
+<title>Spring Boot Journal</title>
+
+<link rel="stylesheet" type="text/css" media="all" href="css/style.css"></link>
+<link rel="stylesheet" type="text/javascript" media="all"
+	href="javascript/main.js"></link>
+</head>
+
+<body>
+	<div class="container">
+		<h1>Spring Boot Journal</h1>
+
+		<tr th:each="lexax : ${lexa}">
+
+
+			<div class="wrap">
+				<div class="card">
+					<div class="front">
+						<span th:text="${lexax.title}">title</span>
+					</div>
+					<div class="back">
+						<span th:text="${lexax.title2}">title2</span>
+					</div>
+				</div>
+			</div>
+		</tr>
+		<!-- 
+		<div class="wrap">
+			<div class="card">
+				<div class="front">
+					<span th:text="${lexa.Title }">title</span>
+				</div>
+				<div class="back">
+					<span th:text="${lexa.Title2 }">title2</span>
+				</div>
+			</div>
+		</div>
+ -->
+
+
+	</div>
+	<script>
+		alert("hi");
+	</script>
+</body>
+</html>
